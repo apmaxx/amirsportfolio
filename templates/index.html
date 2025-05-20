@@ -5,6 +5,17 @@
     <title> Amir Pettigrew | Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='portstyles.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <style>
+        @keyframes fadein {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideup {
+            from { transform: translateY(220px);  opacity: 0;}
+            to { transform: translateY(0); opacity: 1; }
+            
+        }
+    </style>
     </head>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
@@ -13,18 +24,17 @@
         <a class="nav-link active" aria-current="page" href="#">Home</a>
         <a class="nav-link" href="#"> About Me</a>
         <a class="nav-link" href="#"> Projects</a>
-        <a class="nav-link" href="#"> Contact</a>
-      </div>
     
 </nav>
 
 <div class="intro">
-    <h1 style="text-align: center;"> Welcome to my safe space</h1>
+    <h1 style="text-align: center; animation: fadein 2s; "> Welcome to my safe space</h1>
 </div>
-        <div class="card" style="width: 28rem; height:337px; margin-left: 750px; margin-top: 100px;"> 
+        <div class="card" style="width: 28rem; height:339px; margin-left: 750px; margin-top: 100px; border-radius: 10px; animation: slideup 2s;" > 
             
-            <img src="/static/kirko.gif" class="card-img-top" alt="...">
+            <img src="/static/kirko.gif" class="card-img-top" style="border-radius: 10px;">
             
         </div>
+        <h1 style="text-align: center;"> Feel free to browse around~</h1>
     </body>
 </html>

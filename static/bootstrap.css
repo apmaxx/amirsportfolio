@@ -60,7 +60,9 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #5aa9f3;
+  background-image: url('sky.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 [tabindex="-1"]:focus {
